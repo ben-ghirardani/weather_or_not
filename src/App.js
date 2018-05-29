@@ -13,7 +13,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
+        {/* pass a method into APICall that pulls out the data I want and inserts it into App state */}
         <APICall/>
+
       </div>
     );
   }

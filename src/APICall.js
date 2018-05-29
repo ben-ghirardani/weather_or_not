@@ -24,14 +24,15 @@ class APICall extends Component {
                     return results.json();
                 }) 
                 .then(data => {
-                    this.setState({data: data})
+                    let dataArray = [];
+                    dataArray.push(data);
+                    this.setState({data: dataArray})
                 })
     }
 
     render() {
         return(
             <div>
-                {/* pull the data I want to use from this.state.data and make it available here to export to App.js */}
                 </div>
         )
     }
