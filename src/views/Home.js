@@ -14,9 +14,9 @@ const Home = () => {
             </div>
 
             <div className="location-input" >
-                <form method="POST" action="/get-location" >
-                    <input type="text" placeholder="Enter lattitude" name="lattitude" />
-                    <input type="text" placeholder="Enter longitude" name="longitude" />
+                <form method='POST' action='/get-location' >
+                    <input type='text' placeholder="Enter latitude" name='latitude' />
+                    <input type='text' placeholder='Enter longitude' name='longitude' />
                     <button>Enter</button>
                 </form>
             </div>
@@ -25,3 +25,5 @@ const Home = () => {
     )
 
 }
+
+export default Home;

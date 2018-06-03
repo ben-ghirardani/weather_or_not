@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const key = require('.../APIData/APIKey.js');
+const key = require('./APIKey.js');
 
 module.export = (app) => {
 
@@ -13,7 +13,6 @@ module.export = (app) => {
         if(!latitude || !longitude) {
             res.redirect('/error');
         } else {
-
         res.redirect('/current-weather')
         }
     })

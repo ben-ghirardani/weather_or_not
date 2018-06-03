@@ -10,15 +10,24 @@ class CurrentWeather extends Component {
     }
 
     componentDidMount() {
-        fetch('/get-weather')
+        fetch('/weather-data')
         .then(res => res.json())
         .then(data => {
             this.setState({theWeather: data})
         })
+        .catch(err => {
+            console.log(err);
+        })
+    }
+
+    render () {
+        return(
+        <div>
+            <p>test front end</p>
+        </div>
+        )
     }
 
 }
-
-
 
 export default CurrentWeather;

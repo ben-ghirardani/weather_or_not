@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+// import App from './App';
+// import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 
 import App from './views/App';
 import Home from './views/Home';
 import CurrentWeather from './views/CurrentWeather';
-import ErrorDisplay from './ErrorDisplay';
+import ErrorDisplay from './views/ErrorDisplay';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
